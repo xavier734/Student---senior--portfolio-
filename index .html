@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>xavier conyers | Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0b0f19;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #161b26;
+      border: 1px solid #232a3b;
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    /* Profile Header */
+    .profile-card {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #3b82f6;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-card h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .profile-card h2 {
+      font-size: 0.9rem;
+      color: #94a3b8;
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+
+    .profile-card p {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      max-width: 600px;
+      line-height: 1.4;
+    }
+
+    /* Section Cards */
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .section-subtitle {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-bottom: 16px;
+    }
+
+    /* Links Buttons */
+    .links-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      display: inline-block;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    /* Project Cards */
+    .project-card {
+      display: flex;
+      gap: 20px;
+    }
+
+    @media (max-width: 650px) {
+      .project-card {
+        flex-direction: column;
+      }
+    }
+
+    .project-preview {
+      flex: 1;
+      min-height: 220px;
+      background-color: #0d1117;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #232a3b;
+      padding: 12px;
+    }
+
+    .script-box {
+      font-family: monospace;
+      font-size: 0.75rem;
+      color: #a5d6ff;
+      line-height: 1.5;
+      text-align: left;
+      white-space: pre-line;
+      overflow-y: auto;
+      max-height: 200px;
+      width: 100%;
+    }
+
+    .project-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-info h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .project-info p {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+
+    .skills-text {
+      font-size: 0.75rem;
+      color: #cbd5e1;
+      margin-top: auto;
+    }
+
+    .skills-text span {
+      font-weight: 600;
+      color: #60a5fa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Profile Header -->
+    <div class="card profile-card">
+      <div class="avatar">
+        <img src="https://via.placeholder.com/80" alt="Xavier Conyers Avatar" />
+      </div>
+      <h1>xavier conyers</h1>
+      <h2>Student at Thomas A. Edison CTE High School</h2>
+      <p>
+        Hello, my name is Xavier Conyers. I am a student at Thomas A. Edison CTE High School in the Game Design pathway. I enjoy programming, web development, and creating digital projects. This portfolio showcases my UI/UX designs, scripts, and software concepts.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="card">
+      <div class="section-title">Links</div>
+      <div class="section-subtitle">Project resources and social links</div>
+      <div class="links-group">
+        <a href="https://github.com/xavier734" target="_blank" class="btn">GitHub Profile</a>
+        <a href="https://figma.com/design/d7ncbwLmx4fLksvo2Ao6vn/App-and-stuff" target="_blank" class="btn">Figma Wireframes</a>
+      </div>
+    </div>
+
+    <!-- Featured Section Header -->
+    <div class="card">
+      <div class="section-title">Featured Projects</div>
+      <div class="section-subtitle">A showcase of my healthcare app UI design and creative promotional script.</div>
+    </div>
+
+    <!-- Project 1: Figma UI/UX Design -->
+    <div class="card project-card">
+      <div class="project-preview">
+        <!-- You can paste an image tag here of your Figma mockup or embed Figma iframe -->
+        <p style="color: #94a3b8; font-size: 0.8rem; text-align: center;">[ Figma Wireframe & Prototype Preview ]</p>
+      </div>
+      <div class="project-info">
+        <h3>New York Health Care UI App Design</h3>
+        <p>
+          Designed a full mobile user experience in Figma to help New York residents quickly find nearby hospitals and healthcare facilities. The design includes login/sign-up flows, hospital matching based on health needs, and emergency access features.
+        </p>
+        <div class="skills-text">
+          <span>Skills:</span> UI/UX Design, Figma, Mobile Prototyping, Wireframing
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Video Commercial Script -->
+    <div class="card project-card">
+      <div class="project-preview">
+        <div class="script-box">
+Cloud tumbles down the ramp, falls down, and limps toward another student.
+
+Xavier: "Are you sure that is a good idea?"
+Cloud: "I learned from the best"
+*Cloud attempts the stunt but fails*
+Cloud: "Ouch! Oh my ankle!"
+Xavier: "That doesn't look too good."
+Cloud: "I need medical assistance..."
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>Healthcare App Script & Skit</h3>
+        <p>
+          Wrote a short  commercial script showcasing a realistic scenario where a student gets hurt doing a skateboard trick and needs quick medical assistance. The script introduces the New York Health Care app as the solution.
+        </p>
+        <div class="skills-text">
+          <span>Skills:</span> Scriptwriting, Storytelling, Creative Writing, Content Design
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
